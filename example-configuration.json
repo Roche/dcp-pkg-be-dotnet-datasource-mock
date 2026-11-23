@@ -1,0 +1,186 @@
+{
+  "Settings": {
+    "AnalyticalData": {
+      "AttributeNames": [
+        "Signal at Wavelength",
+        "Analytical Attribute"
+      ],
+      "MaxAttributes": 10,
+      "UoM": [
+        "%",
+        "dim"
+      ]
+    },
+    "AssetHierarchy": {
+      "AttributeNames": [
+        "Pressure|Double:double",
+        "Temperature|Single:°C",
+        "Position|Int32:%",
+        "Flow|Double:L/h"
+      ],
+      "Categories": [
+        "Category 1",
+        "Category 2",
+        "Category 3",
+        "Category 4"
+      ],
+      "ConfigurationItemAttributeName": "BatchID",
+      "ElementNames": [
+        "Element 1",
+        "Element 2",
+        "Element 3",
+        "Element 4"
+      ],
+      "LocationNames": [
+        "Vessel",
+        "Valve position",
+        "Skid",
+        "Chamber",
+        "Tank"
+      ],
+      "MaxAttributesPerElement": 10,
+      "MaxDepth": 10,
+      "MaxElements": 30,
+      "NumberOfElementTempaltes": 8,
+      "StepAttributesPercentage": 10,
+      "UoM": [
+        "mbar",
+        "dim",
+        "°C",
+        "rpm",
+        "%",
+        "psi"
+      ],
+      "ValueTypes": [
+        "Double",
+        "String",
+        "Int32",
+        "Int64",
+        "Single",
+        "Enum"
+      ],
+      "ValueTypesWeights": [
+        0.4,
+        0.2,
+        0.15,
+        0.12,
+        0.1,
+        0.03
+      ]
+    },
+    "ElectronicDocumentManagement": {
+      "Filters": [
+        "SOP",
+        "TEC",
+        "REC"
+      ]
+    },
+    "EventframeContext": {
+      "AttributeNames": [
+        "Ordernumber|String",
+        "Materialnumber|String",
+        "Phase|String",
+        "Context|String",
+        "Start|Double",
+        "Max|Double",
+        "Inital|Double",
+        "End|Double"
+      ],
+      "BasePeriods": [
+        600,
+        3600,
+        7200
+      ],
+      "BasePeriodsWeights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "NumberOfEventFrameTemplate": 1
+    },
+    "ProcessMonitoringData": {
+      "AttributeMetaDataKeys": [
+        "platform",
+        "ds/dp/device",
+        "product"
+      ],
+      "AttributeNames": [
+        "Filling|CQA:double",
+        "Bioreactor|CQA:double",
+        "Compounding|Thaw:int",
+        "Filling|KPI:%",
+        "Bioreactor|Bioburden:%"
+      ],
+      "AttributeValueMetaDataKeys": [
+        "SiteID",
+        "RunID",
+        "BatchID"
+      ],
+      "BasePeriod": 259200,
+      "MaxAttributes": 50,
+      "MinAttributes": 20
+    },
+    "QualityEventData": {
+      "Areas": [
+        "DS",
+        "DP"
+      ],
+      "EventDetails": [
+        "CAPA|Sterilization Deviation",
+        "CAPA|SOP Update",
+        "DEV|Temperature Excursion",
+        "DEV|Yield Loss",
+        "QE|Logistics Delay",
+        "QE|Logistics Defect",
+        "CMP|Packaging Defect",
+        "CMP|Yield Loss"
+      ],
+      "HorizonDays": 180,
+      "MaxEvents": 50,
+      "MinEvents": 10,
+      "Products": [
+        "Trecentriq",
+        "Biologic-B",
+        "Tablet-C"
+      ],
+      "Sites": [
+        "Dublin",
+        "New York",
+        "Singapore"
+      ]
+    },
+    "RecipeData": {
+      "LocationNames": [
+        "Vessel",
+        "Valve",
+        "Skid",
+        "Chamber",
+        "Tank"
+      ],
+      "MaxRecipes": 15,
+      "MaxVersions": 10,
+      "Parameters": [
+        "Pressure|Double:mbar",
+        "Temperature|Single:°C",
+        "Position|Int32:%",
+        "Flow|Double:L/h"
+      ],
+      "ProductNames": [
+        "Product Liquid",
+        "Product Lyo"
+      ],
+      "RecipeLevels": [
+        "ProcessStep",
+        "ProcessPhase"
+      ],
+      "Settings": [
+        "UpperRange",
+        "LowerRange",
+        "Target"
+      ]
+    }
+  },
+  "SystemId": "937bbf32-fd28-4fa3-9316-6d372c148a68",
+  "Version": 3
+}
+

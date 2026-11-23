@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Roche/dcp-pkg-be-dotnet-datasource-mock</RepositoryUrl>
+    <PackageProjectUrl>https://open-dcp.ai/</PackageProjectUrl>
+    <Version>0.2.0</Version>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Datasources\**" />
+    <EmbeddedResource Remove="Datasources\**" />
+    <None Remove="Datasources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OpenDCP.Framework.Configuration.Model" Version="0.3.0" />
+    <PackageReference Include="OpenDCP.Framework.DataTypes.Analytical" Version="0.3.0" />
+    <PackageReference Include="OpenDCP.Framework.DataTypes.Equipment" Version="0.3.0" />
+    <PackageReference Include="OpenDCP.Framework.Exceptions" Version="0.1.1" />
+    <PackageReference Include="OpenDCP.Framework.FormBuilder" Version="0.1.1" />
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+    <PackageReference Include="System.Threading.Tasks" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AssetHierarchy\BaseEntities\" />
+    <Folder Include="EventframeContext\BaseEntities\" />
+    <Folder Include="SensorTelemetry\BaseEntities\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
