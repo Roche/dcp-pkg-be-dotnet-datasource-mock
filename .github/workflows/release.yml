@@ -34,7 +34,7 @@ jobs:
         run: dotnet restore
 
       - name: Build .NET application
-        run: dotnet build OpenDCP.Framework.Datasource.Mock/OpenDCP.Framework.Datasource.Mock.csproj --configuration Release --no-restore --output ./build-output
+        run: dotnet publish OpenDCP.Framework.Datasource.Mock/OpenDCP.Framework.Datasource.Mock.csproj --configuration Release --no-restore --output ./build-output -p:AssemblyVersion=${{ steps.get_version.outputs.version }} -p:Version=${{ steps.get_version.outputs.version }}
 
       - name: Archive build output
         run: zip -r release-${{ steps.get_version.outputs.version }}.zip ./build-output/
